@@ -12,6 +12,8 @@ pipeline {
       steps {
         sh '''
         echo "Testing..."
+        PATH=$PATH:/usr/local/bin/
+        echo $PATH
         python3 searchAndTest.py
         echo "Testing... Done"
         '''
