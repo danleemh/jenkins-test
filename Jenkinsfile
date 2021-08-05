@@ -12,7 +12,7 @@ pipeline {
       steps {
         sh '''
         echo "Testing..."
-        sleep 2
+        python3 searchAndTest.py
         echo "Testing... Done"
         '''
       }
